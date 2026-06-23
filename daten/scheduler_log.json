@@ -1,10 +1,5 @@
 [
   {
-    "zeit": "2026-06-23 06:28:54.949961",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'prog2' (kritisch)"
-  },
-  {
     "zeit": "2026-06-23 06:28:55.061134",
     "typ": "email",
     "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'spazieren gehen'"
@@ -496,6 +491,11 @@
   },
   {
     "zeit": "2026-06-23 14:29:24.632707",
+    "typ": "system",
+    "nachricht": "Scheduler gestartet"
+  },
+  {
+    "zeit": "2026-06-23 14:47:12.002100",
     "typ": "system",
     "nachricht": "Scheduler gestartet"
   }
