@@ -5,5 +5,4 @@ pandas
 pillow
 pyserial
 edge-tts
-rpy2
 plotly
