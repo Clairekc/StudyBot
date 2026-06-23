@@ -5,3 +5,9 @@ daten/profile/
 daten/tasks/
 daten/audio/
 test_voice*.mp3
+
+# PyInstaller
+build/
+dist/
+*.spec
+*.pyc
