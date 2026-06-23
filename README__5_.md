@@ -1,6 +1,6 @@
-# 🤖 StudyBot — KI-gestützter Lernassistent
+# 🤖 StudyBot
 
-StudyBot ist ein intelligenter Lernassistent für Schüler und Studierende, der Machine Learning nutzt, um personalisierte Aufgabenverwaltung und smarte Erinnerungen zu bieten.
+StudyBot ist ein intelligenter Lern- und Aufgabenassistent für Schüler und Studierende, der Machine Learning nutzt, um personalisierte Aufgabenverwaltung und smarte Erinnerungen zu bieten.
 
 ---
 
@@ -65,7 +65,7 @@ Clusterbildung    Wahrscheinlich-   Sigmoid Funktion
                             Gehäuse des Geräts
 ```
 
-**Ziel:** Intelligente Unterstützung für Studierende zur besseren Organisation und Zeitmanagement.
+
 
 ---
 
@@ -118,13 +118,13 @@ Alle Daten werden **lokal** als JSON-Dateien gespeichert — keine Cloud, keine 
 
 ---
 
-## Entwickler
+## Studentin:
 
-- **Mendel Kandjieu** — mnch@hochschule-trier.de
-- Hochschule Trier — Sommersemester 2026
+- **Mendeleive Claire Chiabou Kandjieu** — mnch@hochschule-trier.de
+- Hochschule Trier 
 
 ---
 
-## Lizenz
+## Im Rahmen des Kurses:
 
-Dieses Projekt wurde im Rahmen eines Hochschulprojekts entwickelt und dient ausschließlich akademischen Zwecken.
+Machine Learning von Prof. Dr. Martin Vogt
