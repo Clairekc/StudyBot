@@ -19,14 +19,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FACES_DIR = os.path.join(BASE_DIR, "daten", "faces")
 os.makedirs(FACES_DIR, exist_ok=True)
 
-# Die 6 Positionen, die beim Onboarding verlangt werden
+# 3 Positionen — Richtung ist nur ein Vorschlag, kein Zwang
 POSITIONEN = [
-    {"key": "vorne",  "label": "Schau gerade nach vorne"},
-    {"key": "oben",   "label": "Schau leicht nach oben"},
-    {"key": "unten",  "label": "Schau leicht nach unten"},
-    {"key": "links",  "label": "Drehe den Kopf leicht nach links"},
-    {"key": "rechts", "label": "Drehe den Kopf leicht nach rechts"},
-    {"key": "seite",  "label": "Zeige dein Profil (von der Seite)"},
+    {"key": "foto1", "label": "Schau gerade in die Kamera"},
+    {"key": "foto2", "label": "Leicht zur Seite oder schräg (oder nochmal gerade)"},
+    {"key": "foto3", "label": "Anderer Winkel nach Wahl"},
 ]
 
 _face_cascade = cv2.CascadeClassifier(
@@ -35,10 +32,22 @@ _face_cascade = cv2.CascadeClassifier(
 
 
 def gesicht_im_frame_finden(frame):
-    """Sucht ein Gesicht im Kamerabild. Gibt (x,y,w,h) zurück oder None."""
+    """
+    Sucht ein Gesicht im Kamerabild. Gibt (x,y,w,h) zurück oder None.
+
+    FIX: CLAHE (Contrast Limited Adaptive Histogram Equalization) statt
+    einfachem equalizeHist — entscheidend bei Gegenlicht (z.B. helles
+    Fenster im Hintergrund), da CLAHE lokal pro Bildbereich ausgleicht
+    statt global. Einfaches equalizeHist reichte bei starkem Gegenlicht
+    nicht aus, CLAHE löst das zuverlässig.
+    """
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
+    clahe = cv2.createCLAHE(clipLimit=3.0, tileGridSize=(8, 8))
+    gray = clahe.apply(gray)
+
     gesichter = _face_cascade.detectMultiScale(
-        gray, scaleFactor=1.1, minNeighbors=5, minSize=(100, 100)
+        gray, scaleFactor=1.05, minNeighbors=4, minSize=(80, 80)
     )
     if len(gesichter) == 0:
         return None
@@ -79,21 +88,24 @@ def nutzer_registrieren(nutzer_id, fotos_liste):
     return modell_pfad
 
 
-def nutzer_erkennen(frame, bekannte_nutzer_ids, schwellenwert=70):
+def nutzer_erkennen(frame, bekannte_nutzer_ids, schwellenwert=90):
     """
     Vergleicht das aktuelle Kamerabild mit allen bekannten Nutzern.
-    Gibt (nutzer_id, konfidenz) zurück, oder (None, 0) falls niemand erkannt wird.
+    Gibt (nutzer_id, konfidenz, debug_info) zurück.
 
     schwellenwert: LBPH-Distanz — niedriger = strenger.
+    Erhöht auf 90 (vorher 70), da 70 in der Praxis oft zu streng war
+    bei unterschiedlicher Beleuchtung zwischen Onboarding und Login.
     """
     gesicht_box = gesicht_im_frame_finden(frame)
     if gesicht_box is None:
-        return None, 0.0
+        return None, 0.0, {"fehler": "Kein Gesicht im Bild gefunden"}
 
     foto = foto_aufnehmen(frame, gesicht_box)
 
     bester_nutzer = None
     beste_distanz = float("inf")
+    alle_distanzen = {}
 
     for nutzer_id in bekannte_nutzer_ids:
         modell_pfad = os.path.join(FACES_DIR, f"{nutzer_id}.yml")
@@ -105,17 +117,25 @@ def nutzer_erkennen(frame, bekannte_nutzer_ids, schwellenwert=70):
 
         try:
             label, distanz = recognizer.predict(foto)
+            alle_distanzen[nutzer_id] = round(distanz, 1)
             if distanz < beste_distanz:
                 beste_distanz = distanz
                 bester_nutzer = nutzer_id
         except cv2.error:
+            alle_distanzen[nutzer_id] = "Fehler"
             continue
+
+    debug_info = {
+        "alle_distanzen": alle_distanzen,
+        "schwellenwert": schwellenwert,
+        "beste_distanz": round(beste_distanz, 1) if beste_distanz != float("inf") else None
+    }
 
     if bester_nutzer is not None and beste_distanz < schwellenwert:
         konfidenz = max(0, 100 - beste_distanz)  # niedrige Distanz = hohe Konfidenz
-        return bester_nutzer, round(konfidenz, 1)
+        return bester_nutzer, round(konfidenz, 1), debug_info
 
-    return None, 0.0
+    return None, 0.0, debug_info
 
 
 def alle_registrierten_nutzer():

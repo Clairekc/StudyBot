@@ -1,0 +1,23 @@
+{
+  "nutzer_id": "claire_kandjieu",
+  "vorname": "Claire",
+  "nachname": "Kandjieu",
+  "geburtsdatum": "2002-04-10",
+  "email": "mendelkandjieu@gmail.com",
+  "passwort_hash": "46e339fd8de3155ae0fbb24f9288b14750ee18eb323cbcd1d8c0bdb79f408456",
+  "erstellt_am": "2026-06-23 02:44:49.115787",
+  "fragebogen": {
+    "aufstehen": "Vor 6:30 Uhr",
+    "schlafen": "21 – 22 Uhr",
+    "lernzeit": "Nachmittags (14–18 Uhr)",
+    "konzentration": "20 – 40 Minuten",
+    "mittagessen": "Vor 12 Uhr",
+    "vergesslichkeit": "Manchmal",
+    "entspannung": "Sport",
+    "lernstil": "Alleine, ruhig",
+    "sportzeit": "Morgens",
+    "aufgaben_pro_tag": "1 – 2"
+  },
+  "streak": 0,
+  "punkte": 0
+}

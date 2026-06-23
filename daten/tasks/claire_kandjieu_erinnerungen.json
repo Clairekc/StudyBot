@@ -1,0 +1,124 @@
+{
+  "nutzer_id": "claire_kandjieu",
+  "erinnerungen": [
+    {
+      "titel": "saugen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:00:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "saugen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:30:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "saugen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:45:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "termin",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 12:00:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "termin",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 12:30:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "termin",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 12:45:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "termin",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:00:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "termin",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:30:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "termin",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:45:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "spazieren gehen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:30:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "spazieren gehen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 07:00:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "spazieren gehen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 07:15:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "spazieren gehen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:30:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "spazieren gehen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 07:00:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "spazieren gehen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 07:15:00",
+      "gesendet": false,
+      "gesendet_am": null
+    },
+    {
+      "titel": "kuk",
+      "prioritaet": "kritisch",
+      "zeit": "2026-06-23 04:40:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 04:38:51.869291"
+    },
+    {
+      "titel": "kuk",
+      "prioritaet": "kritisch",
+      "zeit": "2026-06-23 04:42:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 04:40:54.894230"
+    }
+  ]
+}

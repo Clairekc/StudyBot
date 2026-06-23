@@ -1,0 +1,86 @@
+[
+  {
+    "zeitstempel": "2026-06-19 08:50:01.085226",
+    "aufgabe": "zimmer sauber machen",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-22 02:15:26.427986",
+    "aufgabe": "Zimmer sauber machen",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-22 07:05:08.630965",
+    "aufgabe": "ml",
+    "prioritaet": "kritisch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-22 07:05:11.741153",
+    "aufgabe": "ml",
+    "prioritaet": "kritisch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-22 07:30:52.725095",
+    "aufgabe": "math",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-22 08:00:26.290149",
+    "aufgabe": "mathe",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-22 08:00:26.358395",
+    "aufgabe": "mathe",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-22 08:20:10.775440",
+    "aufgabe": "mathe",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 04:38:51.571447",
+    "aufgabe": "kuk",
+    "prioritaet": "kritisch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 04:38:51.869291",
+    "aufgabe": "kuk",
+    "prioritaet": "kritisch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 04:40:54.759765",
+    "aufgabe": "kuk",
+    "prioritaet": "kritisch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 04:40:54.887034",
+    "aufgabe": "kuk",
+    "prioritaet": "kritisch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  }
+]
