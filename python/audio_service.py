@@ -1,22 +1,23 @@
 # ============================================================
 #  StudyBot — python/audio_service.py
-#  Sprachausgabe über Web Speech API (Browser-TTS)
-#  Kein Arduino nötig — funktioniert direkt im Browser
+#  Sprachausgabe über Microsoft Edge TTS (KatjaNeural)
+#  Hochwertige deutsche Stimme, kein Browser nötig
 # ============================================================
 
+import asyncio
+import os
+import subprocess
 from datetime import datetime
+
+VOICE = "de-DE-KatjaNeural"
+AUDIO_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), "daten", "audio")
+os.makedirs(AUDIO_DIR, exist_ok=True)
 
 
 def nachricht_generieren(titel, prioritaet, erinnerungs_zeit_str, deadline_zeit_str=None):
-    """
-    Generiert die passende Sprachnachricht basierend auf:
-    - Priorität (kritisch/hoch/mittel/niedrig)
-    - Zeit bis Deadline (Tage / Stunden / Minuten)
-    """
+    """Generiert die passende Sprachnachricht."""
     jetzt = datetime.now()
-    erinnerungs_zeit = datetime.fromisoformat(erinnerungs_zeit_str)
 
-    # Deadline berechnen wenn angegeben
     if deadline_zeit_str:
         try:
             deadline = datetime.fromisoformat(deadline_zeit_str)
@@ -27,17 +28,16 @@ def nachricht_generieren(titel, prioritaet, erinnerungs_zeit_str, deadline_zeit_
     else:
         gesamt_minuten = None
 
-    # Zeit bis Deadline bestimmen
     if gesamt_minuten is not None and gesamt_minuten > 0:
-        if gesamt_minuten >= 1440:  # Mehr als 1 Tag
+        if gesamt_minuten >= 1440:
             tage = int(gesamt_minuten / 1440)
             zeitangabe = f"in {tage} {'Tag' if tage == 1 else 'Tagen'}"
             zeittyp = "tage"
-        elif gesamt_minuten >= 60:  # Mehr als 1 Stunde
+        elif gesamt_minuten >= 60:
             stunden = int(gesamt_minuten / 60)
             zeitangabe = f"heute in {stunden} {'Stunde' if stunden == 1 else 'Stunden'}"
             zeittyp = "stunden"
-        else:  # Minuten
+        else:
             minuten = int(gesamt_minuten)
             zeitangabe = f"in {minuten} {'Minute' if minuten == 1 else 'Minuten'}"
             zeittyp = "minuten"
@@ -45,51 +45,64 @@ def nachricht_generieren(titel, prioritaet, erinnerungs_zeit_str, deadline_zeit_
         zeitangabe = "jetzt"
         zeittyp = "minuten"
 
-    # Nachricht nach Priorität und Zeittyp
     if prioritaet == "kritisch":
         if zeittyp == "tage":
-            nachricht = f"Wichtig! {titel} ist {zeitangabe}. Bereite dich unbedingt vor!"
+            return f"Wichtig! {titel} ist {zeitangabe}. Bereite dich unbedingt vor!"
         elif zeittyp == "stunden":
-            nachricht = f"Achtung! {titel} ist {zeitangabe}. Mach dich fertig!"
+            return f"Achtung! {titel} ist {zeitangabe}. Mach dich fertig!"
         else:
-            nachricht = f"Alarm! {titel} beginnt {zeitangabe}! Sofort handeln!"
-
+            return f"Alarm! {titel} beginnt {zeitangabe}! Sofort handeln!"
     elif prioritaet == "hoch":
         if zeittyp == "tage":
-            nachricht = f"Erinnerung: {titel} ist {zeitangabe}. Fang rechtzeitig an!"
+            return f"Erinnerung: {titel} ist {zeitangabe}. Fang rechtzeitig an!"
         elif zeittyp == "stunden":
-            nachricht = f"{titel} ist {zeitangabe} fällig. Bereite dich vor!"
+            return f"{titel} ist {zeitangabe} fällig. Bereite dich vor!"
         else:
-            nachricht = f"Dringend! {titel} {zeitangabe}!"
-
+            return f"Dringend! {titel} {zeitangabe}!"
     elif prioritaet == "mittel":
         if zeittyp == "tage":
-            nachricht = f"Nicht vergessen: {titel} ist {zeitangabe}."
+            return f"Nicht vergessen: {titel} ist {zeitangabe}."
         elif zeittyp == "stunden":
-            nachricht = f"{titel} ist heute fällig. Du hast noch {zeitangabe.replace('heute ', '')}."
+            return f"{titel} ist heute fällig. Du hast noch {zeitangabe.replace('heute ', '')}."
         else:
-            nachricht = f"Erinnerung: {titel} {zeitangabe}."
-
-    else:  # niedrig
+            return f"Erinnerung: {titel} {zeitangabe}."
+    else:
         if zeittyp == "tage":
-            nachricht = f"Kurze Erinnerung: {titel} ist {zeitangabe}."
+            return f"Kurze Erinnerung: {titel} ist {zeitangabe}."
         elif zeittyp == "stunden":
-            nachricht = f"{titel} heute nicht vergessen!"
+            return f"{titel} heute nicht vergessen!"
         else:
-            nachricht = f"{titel} {zeitangabe}."
+            return f"{titel} {zeitangabe}."
 
-    return nachricht
+
+async def _text_zu_audio(nachricht, datei_pfad):
+    """Konvertiert Text zu Audio mit Edge TTS."""
+    import edge_tts
+    tts = edge_tts.Communicate(nachricht, voice=VOICE, rate="-5%")
+    await tts.save(datei_pfad)
+
+
+def audio_abspielen(nachricht):
+    """Spielt eine Sprachnachricht ab — direkt, ohne Browser."""
+    try:
+        datei = os.path.join(AUDIO_DIR, "alarm.mp3")
+        asyncio.run(_text_zu_audio(nachricht, datei))
+        # Windows: direkt abspielen
+        os.startfile(datei)
+        print(f"[Audio] Abgespielt: {nachricht[:50]}")
+        return True
+    except Exception as e:
+        print(f"[Audio] Fehler: {e}")
+        return False
 
 
 def audio_javascript(nachricht, lautstaerke=1.0, geschwindigkeit=0.9):
     """
-    Gibt JavaScript-Code zurück der die Nachricht im Browser vorliest.
-    Wird in Streamlit via st.components.v1.html() eingebettet.
+    Fallback: Web Speech API für Streamlit-Dashboard.
+    Wird verwendet wenn Edge TTS nicht direkt abgespielt werden kann.
     """
-    # Anführungszeichen in der Nachricht escapen
     nachricht_escaped = nachricht.replace("'", "\\'").replace('"', '\\"')
-
-    js_code = f"""
+    return f"""
     <script>
     (function() {{
         if ('speechSynthesis' in window) {{
@@ -99,59 +112,42 @@ def audio_javascript(nachricht, lautstaerke=1.0, geschwindigkeit=0.9):
             msg.volume = {lautstaerke};
             msg.rate = {geschwindigkeit};
             msg.pitch = 1.0;
-
-            // Beste deutsche Stimme auswählen
             var stimmen = window.speechSynthesis.getVoices();
-            var de_stimme = stimmen.find(s => s.lang.startsWith('de'));
+            var de_stimme = stimmen.find(s => s.lang && s.lang.startsWith('de'));
             if (de_stimme) msg.voice = de_stimme;
-
             window.speechSynthesis.speak(msg);
-        }} else {{
-            console.log('Web Speech API nicht verfügbar');
         }}
     }})();
     </script>
     """
-    return js_code
 
 
 def alarm_javascript(prioritaet):
-    """
-    Gibt einen kurzen Alarm-Ton aus (Beep) vor der Sprachnachricht.
-    Frequenz und Dauer je nach Priorität.
-    """
+    """Bip-Ton je nach Priorität."""
     configs = {
-        "kritisch": {"freq": 880, "dauer": 0.5, "wiederholungen": 3},
-        "hoch":     {"freq": 660, "dauer": 0.4, "wiederholungen": 2},
-        "mittel":   {"freq": 523, "dauer": 0.3, "wiederholungen": 1},
-        "niedrig":  {"freq": 440, "dauer": 0.2, "wiederholungen": 1},
+        "kritisch": {"freq": 880, "dauer": 0.5, "n": 3},
+        "hoch":     {"freq": 660, "dauer": 0.4, "n": 2},
+        "mittel":   {"freq": 523, "dauer": 0.3, "n": 1},
+        "niedrig":  {"freq": 440, "dauer": 0.2, "n": 1},
     }
     c = configs.get(prioritaet, configs["mittel"])
-
-    js_code = f"""
+    return f"""
     <script>
     (function() {{
         var ctx = new (window.AudioContext || window.webkitAudioContext)();
-        var wiederholungen = {c['wiederholungen']};
-        var dauer = {c['dauer']};
-        var freq = {c['freq']};
-
         function beep(i) {{
-            if (i >= wiederholungen) return;
+            if (i >= {c['n']}) return;
             var osc = ctx.createOscillator();
             var gain = ctx.createGain();
-            osc.connect(gain);
-            gain.connect(ctx.destination);
-            osc.frequency.value = freq;
+            osc.connect(gain); gain.connect(ctx.destination);
+            osc.frequency.value = {c['freq']};
             osc.type = 'sine';
             gain.gain.setValueAtTime(0.3, ctx.currentTime);
-            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + dauer);
-            osc.start(ctx.currentTime);
-            osc.stop(ctx.currentTime + dauer);
-            setTimeout(function() {{ beep(i + 1); }}, (dauer + 0.1) * 1000);
+            gain.gain.exponentialRampToValueAtTime(0.001, ctx.currentTime + {c['dauer']});
+            osc.start(ctx.currentTime); osc.stop(ctx.currentTime + {c['dauer']});
+            setTimeout(function() {{ beep(i+1); }}, {int((c['dauer']+0.1)*1000)});
         }}
         beep(0);
     }})();
     </script>
     """
-    return js_code

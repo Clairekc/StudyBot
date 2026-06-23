@@ -466,5 +466,707 @@
       }
     },
     "erstellt_am": "2026-06-23 04:33:51.544838"
+  },
+  {
+    "titel": "boden putzen",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 14,
+    "typ": "erinnerung",
+    "geschaetzt_min": 15,
+    "schwierigkeit": 1,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 2,
+        "cluster_name": "leicht_locker",
+        "abstand": 0.89
+      },
+      "prioritaet": {
+        "prioritaet": "hoch",
+        "konfidenz": 43.1,
+        "wahrscheinlichkeiten": [
+          0.3455,
+          0.4312,
+          0.1778,
+          0.0456
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 13,
+        "beste_uhrzeit": "13:00",
+        "score": 0.965,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.061,
+          0.06,
+          0.064,
+          0.079,
+          0.12,
+          0.207,
+          0.357,
+          0.569,
+          0.792,
+          0.945,
+          0.965,
+          0.846,
+          0.636,
+          0.411,
+          0.219,
+          0.07,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 05:10:40.595544"
+  },
+  {
+    "titel": "boden putzen",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 5,
+    "typ": "erinnerung",
+    "geschaetzt_min": 15,
+    "schwierigkeit": 1,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 2,
+        "cluster_name": "leicht_locker",
+        "abstand": 0.89
+      },
+      "prioritaet": {
+        "prioritaet": "hoch",
+        "konfidenz": 43.1,
+        "wahrscheinlichkeiten": [
+          0.3455,
+          0.4312,
+          0.1778,
+          0.0456
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 13,
+        "beste_uhrzeit": "13:00",
+        "score": 0.977,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.068,
+          0.067,
+          0.072,
+          0.089,
+          0.132,
+          0.223,
+          0.379,
+          0.594,
+          0.817,
+          0.965,
+          0.977,
+          0.85,
+          0.636,
+          0.412,
+          0.222,
+          0.074,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 05:11:17.966834"
+  },
+  {
+    "titel": "jah",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 5,
+    "typ": "projekt",
+    "geschaetzt_min": 30,
+    "schwierigkeit": 3,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 3,
+        "cluster_name": "dringend_kurz",
+        "abstand": 1.58
+      },
+      "prioritaet": {
+        "prioritaet": "mittel",
+        "konfidenz": 36.5,
+        "wahrscheinlichkeiten": [
+          0.2917,
+          0.321,
+          0.3649,
+          0.0224
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 16,
+        "beste_uhrzeit": "16:00",
+        "score": 0.988,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.074,
+          0.074,
+          0.08,
+          0.098,
+          0.145,
+          0.239,
+          0.4,
+          0.619,
+          0.842,
+          0.984,
+          0.988,
+          0.853,
+          0.636,
+          0.413,
+          0.224,
+          0.078,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 05:23:53.857911"
+  },
+  {
+    "titel": "english",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 5,
+    "typ": "test",
+    "geschaetzt_min": 60,
+    "schwierigkeit": 2,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 3,
+        "cluster_name": "dringend_kurz",
+        "abstand": 0.948
+      },
+      "prioritaet": {
+        "prioritaet": "hoch",
+        "konfidenz": 94,
+        "wahrscheinlichkeiten": [
+          0.0425,
+          0.9403,
+          0.0169,
+          0.0003
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 15,
+        "beste_uhrzeit": "15:00",
+        "score": 1,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.081,
+          0.081,
+          0.087,
+          0.108,
+          0.157,
+          0.256,
+          0.422,
+          0.644,
+          0.866,
+          1,
+          0.998,
+          0.856,
+          0.636,
+          0.414,
+          0.227,
+          0.082,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 05:36:51.159133"
+  },
+  {
+    "titel": "prog1",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 5,
+    "typ": "projekt",
+    "geschaetzt_min": 45,
+    "schwierigkeit": 3,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 3,
+        "cluster_name": "dringend_kurz",
+        "abstand": 1.618
+      },
+      "prioritaet": {
+        "prioritaet": "mittel",
+        "konfidenz": 36,
+        "wahrscheinlichkeiten": [
+          0.2954,
+          0.3221,
+          0.3604,
+          0.0222
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 15,
+        "beste_uhrzeit": "15:00",
+        "score": 1,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.087,
+          0.088,
+          0.095,
+          0.117,
+          0.169,
+          0.273,
+          0.443,
+          0.669,
+          0.89,
+          1,
+          1,
+          0.858,
+          0.636,
+          0.415,
+          0.23,
+          0.085,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 05:50:41.572074"
+  },
+  {
+    "titel": "prog2",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 6,
+    "typ": "test",
+    "geschaetzt_min": 60,
+    "schwierigkeit": 3,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 4,
+        "cluster_name": "dringend_lang",
+        "abstand": 1.67
+      },
+      "prioritaet": {
+        "prioritaet": "kritisch",
+        "konfidenz": 89.6,
+        "wahrscheinlichkeiten": [
+          0.8963,
+          0.0992,
+          0.0045,
+          0
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 15,
+        "beste_uhrzeit": "15:00",
+        "score": 1,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.094,
+          0.095,
+          0.103,
+          0.127,
+          0.182,
+          0.29,
+          0.465,
+          0.695,
+          0.914,
+          1,
+          1,
+          0.86,
+          0.636,
+          0.417,
+          0.233,
+          0.089,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 05:55:26.080303"
+  },
+  {
+    "titel": "bks",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 6,
+    "typ": "projekt",
+    "geschaetzt_min": 45,
+    "schwierigkeit": 2,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 3,
+        "cluster_name": "dringend_kurz",
+        "abstand": 0.827
+      },
+      "prioritaet": {
+        "prioritaet": "mittel",
+        "konfidenz": 36,
+        "wahrscheinlichkeiten": [
+          0.2954,
+          0.3221,
+          0.3604,
+          0.0222
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 15,
+        "beste_uhrzeit": "15:00",
+        "score": 1,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.1,
+          0.102,
+          0.111,
+          0.137,
+          0.195,
+          0.307,
+          0.488,
+          0.72,
+          0.938,
+          1,
+          1,
+          0.862,
+          0.636,
+          0.418,
+          0.236,
+          0.093,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 06:09:32.203805"
+  },
+  {
+    "titel": "op",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 6,
+    "typ": "projekt",
+    "geschaetzt_min": 15,
+    "schwierigkeit": 3,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 3,
+        "cluster_name": "dringend_kurz",
+        "abstand": 1.573
+      },
+      "prioritaet": {
+        "prioritaet": "mittel",
+        "konfidenz": 37.8,
+        "wahrscheinlichkeiten": [
+          0.2813,
+          0.318,
+          0.3776,
+          0.0231
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 15,
+        "beste_uhrzeit": "15:00",
+        "score": 1,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.107,
+          0.109,
+          0.119,
+          0.147,
+          0.208,
+          0.325,
+          0.51,
+          0.745,
+          0.961,
+          1,
+          1,
+          0.863,
+          0.637,
+          0.42,
+          0.239,
+          0.096,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 06:16:46.941152"
+  },
+  {
+    "titel": "op",
+    "faellig": "2026-06-23",
+    "faellig_stunde": 6,
+    "typ": "projekt",
+    "geschaetzt_min": 15,
+    "schwierigkeit": 1,
+    "nutzer_id": "claire_kandjieu",
+    "ergebnis": {
+      "cluster": {
+        "cluster_id": 2,
+        "cluster_name": "leicht_locker",
+        "abstand": 0.89
+      },
+      "prioritaet": {
+        "prioritaet": "kritisch",
+        "konfidenz": 44,
+        "wahrscheinlichkeiten": [
+          0.4404,
+          0.3585,
+          0.1773,
+          0.0238
+        ],
+        "klassen": [
+          "kritisch",
+          "hoch",
+          "mittel",
+          "niedrig"
+        ]
+      },
+      "optimale_zeit": {
+        "beste_stunde": 13,
+        "beste_uhrzeit": "13:00",
+        "score": 1,
+        "alle_stunden": [
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "alle_scores": [
+          0.113,
+          0.116,
+          0.127,
+          0.157,
+          0.221,
+          0.342,
+          0.533,
+          0.77,
+          0.984,
+          1,
+          1,
+          0.865,
+          0.637,
+          0.422,
+          0.242,
+          0.1,
+          0,
+          0
+        ]
+      }
+    },
+    "erstellt_am": "2026-06-23 06:17:18.050015"
   }
 ]

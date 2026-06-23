@@ -1,0 +1,21 @@
+{
+  "nutzer_id": "carelle_nziemi",
+  "erinnerungen": [
+    {
+      "titel": "op",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:27:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:25:48.570676",
+      "per_email": false
+    },
+    {
+      "titel": "op",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:27:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:25:50.489582",
+      "per_email": true
+    }
+  ]
+}

@@ -1,502 +1,502 @@
 [
   {
-    "zeit": "2026-06-22 06:32:11.197418",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 06:33:33.792064",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (mittel) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 06:34:02.901388",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (mittel) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 06:35:02.365763",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 06:35:33.186189",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (kritisch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 06:39:44.883530",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 06:41:12.208306",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 06:43:00.380389",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (kritisch) → 1 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 06:48:59.957715",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 06:51:10.270176",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ML' (kritisch) → 1 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 06:54:05.280896",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 06:55:50.986662",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (kritisch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 07:03:42.978568",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 07:05:02.105979",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (kritisch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 07:05:05.434355",
-    "typ": "info",
-    "nachricht": "Erinnerung fällig: 'ml' (kritisch)"
-  },
-  {
-    "zeit": "2026-06-22 07:05:06.609638",
-    "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestätigt: lary_qwasdfgh_070352 (75.5%)"
-  },
-  {
-    "zeit": "2026-06-22 07:05:08.633619",
+    "zeit": "2026-06-23 06:25:52.643963",
     "typ": "signal",
-    "nachricht": "✓ Arduino-Signal gesendet: 'ml' (kritisch)"
+    "nachricht": "Signal gesendet: 'jah'"
   },
   {
-    "zeit": "2026-06-22 07:05:08.639748",
+    "zeit": "2026-06-23 06:28:40.015909",
     "typ": "info",
-    "nachricht": "Erinnerung fällig: 'ml' (kritisch)"
+    "nachricht": "Erinnerung faellig: 'saugen' (hoch)"
   },
   {
-    "zeit": "2026-06-22 07:05:09.728582",
-    "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestätigt: lary_qwasdfgh_070352 (51.6%)"
-  },
-  {
-    "zeit": "2026-06-22 07:05:11.743924",
-    "typ": "signal",
-    "nachricht": "✓ Arduino-Signal gesendet: 'ml' (kritisch)"
-  },
-  {
-    "zeit": "2026-06-22 07:05:27.863671",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 07:11:40.325458",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 07:12:55.857634",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (kritisch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 07:19:07.747637",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 07:20:23.170301",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (mittel) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 07:25:49.473629",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 07:26:53.142864",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 07:30:37.698201",
-    "typ": "planung",
-    "nachricht": "Geplant: 'math' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 07:30:49.520874",
+    "zeit": "2026-06-23 06:28:40.567542",
     "typ": "info",
-    "nachricht": "Erinnerung fällig: 'math' (hoch)"
+    "nachricht": "Erinnerung faellig: 'saugen' (hoch)"
   },
   {
-    "zeit": "2026-06-22 07:30:50.697916",
+    "zeit": "2026-06-23 06:28:45.264714",
     "typ": "warnung",
-    "nachricht": "Nutzer nicht erkannt → Signal trotzdem senden"
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
   },
   {
-    "zeit": "2026-06-22 07:30:52.725095",
-    "typ": "signal",
-    "nachricht": "✓ Arduino-Signal gesendet: 'math' (hoch)"
+    "zeit": "2026-06-23 06:28:45.877022",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
   },
   {
-    "zeit": "2026-06-22 07:41:06.803301",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
+    "zeit": "2026-06-23 06:28:46.583438",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'saugen'"
   },
   {
-    "zeit": "2026-06-22 07:55:34.667835",
-    "typ": "planung",
-    "nachricht": "Geplant: 'therapie' (kritisch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 08:00:19.722459",
-    "typ": "planung",
-    "nachricht": "Geplant: 'mathe' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 08:00:23.075201",
+    "zeit": "2026-06-23 06:28:46.595530",
     "typ": "info",
-    "nachricht": "Erinnerung fällig: 'mathe' (hoch)"
+    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
   },
   {
-    "zeit": "2026-06-22 08:00:23.413509",
+    "zeit": "2026-06-23 06:28:46.830972",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'saugen'"
+  },
+  {
+    "zeit": "2026-06-23 06:28:46.838778",
     "typ": "info",
-    "nachricht": "Erinnerung fällig: 'mathe' (hoch)"
+    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
   },
   {
-    "zeit": "2026-06-22 08:00:24.274746",
-    "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestätigt: lary_qwasdfgh_071914 (31.6%)"
+    "zeit": "2026-06-23 06:28:49.164649",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
   },
   {
-    "zeit": "2026-06-22 08:00:24.345643",
-    "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestätigt: lary_qwasdfgh_071914 (31.6%)"
+    "zeit": "2026-06-23 06:28:49.804842",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'termin'"
   },
   {
-    "zeit": "2026-06-22 08:00:26.292555",
-    "typ": "signal",
-    "nachricht": "✓ Arduino-Signal gesendet: 'mathe' (hoch)"
-  },
-  {
-    "zeit": "2026-06-22 08:00:26.358395",
-    "typ": "signal",
-    "nachricht": "✓ Arduino-Signal gesendet: 'mathe' (hoch)"
-  },
-  {
-    "zeit": "2026-06-22 08:20:07.161632",
+    "zeit": "2026-06-23 06:28:49.812847",
     "typ": "info",
-    "nachricht": "Erinnerung fällig: 'mathe' (hoch)"
+    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
   },
   {
-    "zeit": "2026-06-22 08:20:08.760652",
-    "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestätigt: lary_qwasdfgh_071914 (16.7%)"
+    "zeit": "2026-06-23 06:28:49.925638",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
   },
   {
-    "zeit": "2026-06-22 08:20:10.780606",
-    "typ": "signal",
-    "nachricht": "✓ Arduino-Signal gesendet: 'mathe' (hoch)"
+    "zeit": "2026-06-23 06:28:50.860526",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'termin'"
   },
   {
-    "zeit": "2026-06-22 10:41:23.130283",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 10:44:03.008130",
-    "typ": "planung",
-    "nachricht": "Geplant: 'op' (hoch) → 1 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 10:50:10.662308",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 10:53:08.675291",
-    "typ": "planung",
-    "nachricht": "Geplant: 'ml' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 11:37:19.767157",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 11:37:36.180825",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 11:39:21.820501",
-    "typ": "planung",
-    "nachricht": "Geplant: 'boden putzen' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 11:39:34.603170",
-    "typ": "planung",
-    "nachricht": "Geplant: 'boden putzen' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 22:36:17.502454",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 23:43:44.583474",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-22 23:47:49.604307",
-    "typ": "planung",
-    "nachricht": "Geplant: 'kuk' (kritisch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-22 23:50:35.186599",
-    "typ": "planung",
-    "nachricht": "Geplant: 'kuk' (kritisch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 00:06:17.611807",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 00:08:21.656853",
-    "typ": "planung",
-    "nachricht": "Geplant: 'kuk' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 00:16:37.874965",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 00:18:09.851146",
-    "typ": "planung",
-    "nachricht": "Geplant: 'jah' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 01:59:08.157070",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 02:01:51.255233",
-    "typ": "planung",
-    "nachricht": "Geplant: 'zimmer saugen' (hoch) → 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 02:15:36.150071",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 02:31:52.981840",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 02:34:08.455574",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 02:36:48.945141",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 02:40:59.229825",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 02:42:59.378186",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 03:05:42.384327",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 03:06:12.780771",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 03:09:12.512451",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 03:10:50.501104",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 03:11:19.265892",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 03:41:03.351398",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 03:42:57.937554",
-    "typ": "planung",
-    "nachricht": "Geplant: 'saugen' (hoch) -> 3 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 04:14:02.719872",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 04:19:52.813310",
-    "typ": "planung",
-    "nachricht": "Geplant: 'termin' (hoch) -> 3 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 04:20:18.171009",
-    "typ": "planung",
-    "nachricht": "Geplant: 'termin' (hoch) -> 3 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 04:24:00.893969",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 04:24:30.788534",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 04:26:17.449132",
-    "typ": "planung",
-    "nachricht": "Geplant: 'spazieren gehen' (hoch) -> 3 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 04:27:04.962248",
-    "typ": "planung",
-    "nachricht": "Geplant: 'spazieren gehen' (hoch) -> 3 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 04:32:18.353501",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 04:32:48.789011",
-    "typ": "system",
-    "nachricht": "Scheduler gestartet"
-  },
-  {
-    "zeit": "2026-06-23 04:33:51.530578",
-    "typ": "planung",
-    "nachricht": "Geplant: 'kuk' (kritisch) -> 2 Erinnerungen"
-  },
-  {
-    "zeit": "2026-06-23 04:38:48.598240",
+    "zeit": "2026-06-23 06:28:50.868334",
     "typ": "info",
-    "nachricht": "Erinnerung faellig: 'kuk' (kritisch)"
+    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
   },
   {
-    "zeit": "2026-06-23 04:38:48.869827",
+    "zeit": "2026-06-23 06:28:51.688783",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:28:52.012381",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:28:52.354632",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'spazieren gehen'"
+  },
+  {
+    "zeit": "2026-06-23 06:28:52.361701",
     "typ": "info",
-    "nachricht": "Erinnerung faellig: 'kuk' (kritisch)"
+    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
   },
   {
-    "zeit": "2026-06-23 04:38:49.548780",
+    "zeit": "2026-06-23 06:28:52.642140",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'spazieren gehen'"
+  },
+  {
+    "zeit": "2026-06-23 06:28:52.649707",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 06:28:54.203178",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:28:54.282311",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:28:54.944423",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'spazieren gehen'"
+  },
+  {
+    "zeit": "2026-06-23 06:28:54.949961",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'prog2' (kritisch)"
+  },
+  {
+    "zeit": "2026-06-23 06:28:55.061134",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'spazieren gehen'"
+  },
+  {
+    "zeit": "2026-06-23 06:28:55.074501",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'prog2' (kritisch)"
+  },
+  {
+    "zeit": "2026-06-23 06:28:56.845584",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:28:57.172157",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:28:57.827778",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'prog2'"
+  },
+  {
+    "zeit": "2026-06-23 06:28:58.107103",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'prog2'"
+  },
+  {
+    "zeit": "2026-06-23 06:42:57.923661",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 06:42:58.200866",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 06:42:59.831270",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:42:59.856594",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 06:43:00.287445",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:43:00.289202",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 06:43:30.297504",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'saugen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 06:43:32.790509",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:43:32.796535",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'saugen'"
+  },
+  {
+    "zeit": "2026-06-23 06:43:32.796535",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 06:43:34.321341",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:43:34.327402",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'termin'"
+  },
+  {
+    "zeit": "2026-06-23 06:43:34.327910",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'prog2' (kritisch)"
+  },
+  {
+    "zeit": "2026-06-23 06:43:36.277408",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:43:36.281935",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'prog2'"
+  },
+  {
+    "zeit": "2026-06-23 06:53:36.346098",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'prog2' (kritisch)"
+  },
+  {
+    "zeit": "2026-06-23 06:53:39.288224",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:53:39.288224",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'prog2'"
+  },
+  {
+    "zeit": "2026-06-23 06:55:39.309872",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'jah' (mittel)"
+  },
+  {
+    "zeit": "2026-06-23 06:55:41.716697",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:55:41.722471",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'jah'"
+  },
+  {
+    "zeit": "2026-06-23 06:57:41.742248",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 06:57:43.823619",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:57:43.829516",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 06:58:43.836500",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 06:58:46.783741",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:58:46.785750",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'spazieren gehen'"
+  },
+  {
+    "zeit": "2026-06-23 06:58:46.785750",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 06:58:48.244417",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 06:58:48.249152",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'spazieren gehen'"
+  },
+  {
+    "zeit": "2026-06-23 07:10:30.039217",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'jah' (mittel)"
+  },
+  {
+    "zeit": "2026-06-23 07:10:32.342225",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 07:10:32.343733",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'jah'"
+  },
+  {
+    "zeit": "2026-06-23 11:58:36.334384",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 11:58:38.838037",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 11:58:38.861987",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'termin'"
+  },
+  {
+    "zeit": "2026-06-23 11:58:38.867165",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 11:58:40.364137",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 11:58:40.364137",
+    "typ": "fehler",
+    "nachricht": "Email-Versand fehlgeschlagen für 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 12:28:40.548874",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 12:28:42.996355",
     "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (17.2%)"
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (33.1%)"
   },
   {
-    "zeit": "2026-06-23 04:38:49.845631",
-    "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (17.2%)"
-  },
-  {
-    "zeit": "2026-06-23 04:38:51.575108",
+    "zeit": "2026-06-23 12:28:45.091096",
     "typ": "signal",
-    "nachricht": "Arduino-Signal gesendet: 'kuk' (kritisch)"
+    "nachricht": "Arduino-Signal gesendet: 'termin' (hoch)"
   },
   {
-    "zeit": "2026-06-23 04:38:51.575108",
+    "zeit": "2026-06-23 12:28:45.098451",
     "typ": "audio",
-    "nachricht": "Audio-Alarm gespeichert: 'kuk'"
+    "nachricht": "Audio-Alarm gespeichert: 'termin'"
   },
   {
-    "zeit": "2026-06-23 04:38:51.869291",
+    "zeit": "2026-06-23 12:28:45.106570",
     "typ": "signal",
-    "nachricht": "Arduino-Signal gesendet: 'kuk' (kritisch)"
+    "nachricht": "Signal gesendet: 'termin'"
   },
   {
-    "zeit": "2026-06-23 04:38:51.869291",
-    "typ": "audio",
-    "nachricht": "Audio-Alarm gespeichert: 'kuk'"
-  },
-  {
-    "zeit": "2026-06-23 04:40:51.591995",
+    "zeit": "2026-06-23 12:28:45.115285",
     "typ": "info",
-    "nachricht": "Erinnerung faellig: 'kuk' (kritisch)"
+    "nachricht": "Erinnerung faellig: 'boden putzen' (hoch)"
   },
   {
-    "zeit": "2026-06-23 04:40:51.886389",
+    "zeit": "2026-06-23 12:28:46.531106",
+    "typ": "anwesenheit",
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (27.9%)"
+  },
+  {
+    "zeit": "2026-06-23 12:28:48.564129",
+    "typ": "signal",
+    "nachricht": "Arduino-Signal gesendet: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 12:28:48.572232",
+    "typ": "audio",
+    "nachricht": "Audio-Alarm gespeichert: 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 12:28:48.580352",
+    "typ": "signal",
+    "nachricht": "Signal gesendet: 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 12:43:48.671313",
     "typ": "info",
-    "nachricht": "Erinnerung faellig: 'kuk' (kritisch)"
+    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
   },
   {
-    "zeit": "2026-06-23 04:40:52.748178",
+    "zeit": "2026-06-23 12:43:50.233391",
     "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (30.3%)"
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (21.1%)"
   },
   {
-    "zeit": "2026-06-23 04:40:52.874411",
+    "zeit": "2026-06-23 12:43:52.248583",
+    "typ": "signal",
+    "nachricht": "Arduino-Signal gesendet: 'termin' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 12:43:52.262539",
+    "typ": "audio",
+    "nachricht": "Audio-Alarm gespeichert: 'termin'"
+  },
+  {
+    "zeit": "2026-06-23 12:43:52.278502",
+    "typ": "signal",
+    "nachricht": "Signal gesendet: 'termin'"
+  },
+  {
+    "zeit": "2026-06-23 12:43:52.293764",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 12:43:52.572452",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 12:43:53.834308",
     "typ": "anwesenheit",
-    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (30.3%)"
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (21.6%)"
   },
   {
-    "zeit": "2026-06-23 04:40:54.763559",
+    "zeit": "2026-06-23 12:43:53.955679",
+    "typ": "anwesenheit",
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (21.6%)"
+  },
+  {
+    "zeit": "2026-06-23 12:43:55.867013",
     "typ": "signal",
-    "nachricht": "Arduino-Signal gesendet: 'kuk' (kritisch)"
+    "nachricht": "Arduino-Signal gesendet: 'termin' (hoch)"
   },
   {
-    "zeit": "2026-06-23 04:40:54.767576",
+    "zeit": "2026-06-23 12:43:55.878752",
     "typ": "audio",
-    "nachricht": "Audio-Alarm gespeichert: 'kuk'"
+    "nachricht": "Audio-Alarm gespeichert: 'termin'"
   },
   {
-    "zeit": "2026-06-23 04:40:54.887034",
+    "zeit": "2026-06-23 12:43:55.878752",
     "typ": "signal",
-    "nachricht": "Arduino-Signal gesendet: 'kuk' (kritisch)"
+    "nachricht": "Signal gesendet: 'termin'"
   },
   {
-    "zeit": "2026-06-23 04:40:54.894230",
+    "zeit": "2026-06-23 12:43:55.878752",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 12:43:55.969356",
+    "typ": "signal",
+    "nachricht": "Arduino-Signal gesendet: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 12:43:55.974705",
     "typ": "audio",
-    "nachricht": "Audio-Alarm gespeichert: 'kuk'"
+    "nachricht": "Audio-Alarm gespeichert: 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 12:43:55.984625",
+    "typ": "signal",
+    "nachricht": "Signal gesendet: 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 12:43:57.339707",
+    "typ": "anwesenheit",
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (25.0%)"
+  },
+  {
+    "zeit": "2026-06-23 12:43:59.364721",
+    "typ": "signal",
+    "nachricht": "Arduino-Signal gesendet: 'boden putzen' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 12:43:59.372021",
+    "typ": "audio",
+    "nachricht": "Audio-Alarm gespeichert: 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 12:43:59.378117",
+    "typ": "signal",
+    "nachricht": "Signal gesendet: 'boden putzen'"
   }
 ]

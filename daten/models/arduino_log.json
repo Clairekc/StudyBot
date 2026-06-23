@@ -82,5 +82,82 @@
     "prioritaet": "kritisch",
     "bestaetigt": true,
     "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 05:58:36.591934",
+    "aufgabe": "termin",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 05:58:37.506549",
+    "aufgabe": "termin",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 06:25:48.564861",
+    "aufgabe": "op",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 06:25:49.394013",
+    "aufgabe": "op",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 06:25:52.639051",
+    "aufgabe": "jah",
+    "prioritaet": "mittel",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 12:28:45.080035",
+    "aufgabe": "termin",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 12:28:48.556043",
+    "aufgabe": "boden putzen",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 12:43:52.248583",
+    "aufgabe": "termin",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 12:43:55.861426",
+    "aufgabe": "termin",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 12:43:55.969356",
+    "aufgabe": "boden putzen",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
+  },
+  {
+    "zeitstempel": "2026-06-23 12:43:59.358175",
+    "aufgabe": "boden putzen",
+    "prioritaet": "hoch",
+    "bestaetigt": true,
+    "reaktionszeit_sek": 2.0
   }
 ]

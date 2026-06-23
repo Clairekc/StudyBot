@@ -1,0 +1,23 @@
+{
+  "nutzer_id": "carelle_nziemi",
+  "vorname": "Carelle",
+  "nachname": "Nziemi",
+  "geburtsdatum": "1998-04-09",
+  "email": "nziemichimi@gmail.com",
+  "passwort_hash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+  "erstellt_am": "2026-06-23 06:21:12.663600",
+  "fragebogen": {
+    "aufstehen": "6:30 – 7:30 Uhr",
+    "schlafen": "22 – 23 Uhr",
+    "lernzeit": "Nachmittags (14–18 Uhr)",
+    "konzentration": "20 – 40 Minuten",
+    "mittagessen": "12 – 13 Uhr",
+    "vergesslichkeit": "Manchmal",
+    "entspannung": "Serien/Videos schauen",
+    "lernstil": "Mit Musik im Hintergrund",
+    "sportzeit": "Morgens",
+    "aufgaben_pro_tag": "3 – 4"
+  },
+  "streak": 0,
+  "punkte": 0
+}

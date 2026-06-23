@@ -5,78 +5,89 @@
       "titel": "saugen",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 06:00:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 05:58:34.286063",
+      "per_email": true
     },
     {
       "titel": "saugen",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 06:30:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:28:46.838778",
+      "per_email": true
     },
     {
       "titel": "saugen",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 06:45:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:43:32.796535",
+      "per_email": true
     },
     {
       "titel": "termin",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 12:00:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 11:58:38.867165",
+      "per_email": true
     },
     {
       "titel": "termin",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 12:30:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 12:28:45.115285",
+      "per_email": false
     },
     {
       "titel": "termin",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 12:45:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 12:43:55.878752",
+      "per_email": false
     },
     {
       "titel": "termin",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 06:00:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 05:58:37.514807",
+      "per_email": false
     },
     {
       "titel": "termin",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 06:30:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:28:49.812847",
+      "per_email": true
     },
     {
       "titel": "termin",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 06:45:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:43:34.327910",
+      "per_email": true
     },
     {
       "titel": "spazieren gehen",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 06:30:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:28:52.361701",
+      "per_email": true
     },
     {
       "titel": "spazieren gehen",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 07:00:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:58:46.785750",
+      "per_email": true
     },
     {
       "titel": "spazieren gehen",
@@ -89,15 +100,17 @@
       "titel": "spazieren gehen",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 06:30:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:28:55.074501",
+      "per_email": true
     },
     {
       "titel": "spazieren gehen",
       "prioritaet": "hoch",
       "zeit": "2026-06-23 07:00:00",
-      "gesendet": false,
-      "gesendet_am": null
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:58:48.250277",
+      "per_email": true
     },
     {
       "titel": "spazieren gehen",
@@ -119,6 +132,142 @@
       "zeit": "2026-06-23 04:42:00",
       "gesendet": true,
       "gesendet_am": "2026-06-23 04:40:54.894230"
+    },
+    {
+      "titel": "boden putzen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 12:00:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 11:58:40.364137",
+      "per_email": true
+    },
+    {
+      "titel": "boden putzen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 12:30:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 12:28:48.589329",
+      "per_email": false
+    },
+    {
+      "titel": "boden putzen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 12:45:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 12:43:59.378117",
+      "per_email": false
+    },
+    {
+      "titel": "boden putzen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:14:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:12:40.256956",
+      "per_email": true
+    },
+    {
+      "titel": "boden putzen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:44:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:43:00.289202",
+      "per_email": true
+    },
+    {
+      "titel": "boden putzen",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 06:59:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:57:43.831524",
+      "per_email": true
+    },
+    {
+      "titel": "jah",
+      "prioritaet": "mittel",
+      "zeit": "2026-06-23 06:27:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:25:52.643963",
+      "per_email": false
+    },
+    {
+      "titel": "jah",
+      "prioritaet": "mittel",
+      "zeit": "2026-06-23 06:57:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:55:41.730715",
+      "per_email": true
+    },
+    {
+      "titel": "jah",
+      "prioritaet": "mittel",
+      "zeit": "2026-06-23 07:12:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 07:10:32.343733",
+      "per_email": true
+    },
+    {
+      "titel": "english",
+      "prioritaet": "hoch",
+      "zeit": "2026-06-23 05:42:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 05:40:52.523853",
+      "per_email": true
+    },
+    {
+      "titel": "prog1",
+      "prioritaet": "mittel",
+      "zeit": "2026-06-23 05:52:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 05:50:56.832345",
+      "per_email": true
+    },
+    {
+      "titel": "prog2",
+      "prioritaet": "kritisch",
+      "zeit": "2026-06-23 06:30:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:28:58.114900",
+      "per_email": true
+    },
+    {
+      "titel": "prog2",
+      "prioritaet": "kritisch",
+      "zeit": "2026-06-23 06:45:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:43:36.283063",
+      "per_email": true
+    },
+    {
+      "titel": "prog2",
+      "prioritaet": "kritisch",
+      "zeit": "2026-06-23 06:55:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:53:39.296163",
+      "per_email": true
+    },
+    {
+      "titel": "bks",
+      "prioritaet": "mittel",
+      "zeit": "2026-06-23 06:12:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:10:38.366064",
+      "per_email": true
+    },
+    {
+      "titel": "op",
+      "prioritaet": "mittel",
+      "zeit": "2026-06-23 06:19:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:17:42.475120",
+      "per_email": true
+    },
+    {
+      "titel": "op",
+      "prioritaet": "kritisch",
+      "zeit": "2026-06-23 06:20:00",
+      "gesendet": true,
+      "gesendet_am": "2026-06-23 06:18:44.417124",
+      "per_email": true
     }
   ]
 }

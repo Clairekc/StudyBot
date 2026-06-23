@@ -379,8 +379,8 @@ def _tab_neue_aufgabe(profil):
             from datetime import time as time_type
             faellig_zeit = st.time_input(
                 "🕐 Uhrzeit Deadline",
-                value=time_type(14, 0)
-            )
+                value=time_type(14, 0),
+            step=60)
             faellig_stunde = faellig_zeit.hour
             faellig_minute = faellig_zeit.minute
         with col3:

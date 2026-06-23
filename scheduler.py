@@ -168,7 +168,7 @@ def scheduler_stoppen():
     _scheduler_aktiv.clear()
 
 
-def _zeitpunkte_berechnen(faellig_datum, prioritaet, optimale_stunde, faellig_minute=0):
+def _zeitpunkte_berechnen(faellig_datum, prioritaet, optimale_stunde, faellig_minute=0, faellig_stunde=23):
     """
     Berechnet alle Erinnerungszeitpunkte.
 
@@ -196,7 +196,7 @@ def _zeitpunkte_berechnen(faellig_datum, prioritaet, optimale_stunde, faellig_mi
 
     deadline_dt = datetime(
         faellig_datum.year, faellig_datum.month, faellig_datum.day,
-        optimale_stunde, faellig_minute, 0
+        faellig_stunde, faellig_minute, 0
     )
 
     # Deadline bereits vorbei
@@ -280,7 +280,7 @@ def erinnerungen_planen(nutzer_id, aufgabe_titel, faellig_datum,
                          faellig_minute=0):
     """Plant alle Erinnerungen. Gibt leere Liste zurueck wenn Deadline vorbei."""
     zeitpunkte = _zeitpunkte_berechnen(
-        faellig_datum, prioritaet, optimale_stunde, faellig_minute
+        faellig_datum, prioritaet, optimale_stunde, faellig_minute, faellig_stunde
     )
 
     erinnerungen = []
@@ -385,6 +385,18 @@ def _email_alarm_senden(nutzer_id, titel, prioritaet, erinnerungs_zeit):
             <p style="color:#4A5A80;font-size:14px;">{nachricht}</p>
             <p style="color:#9AA5BD;font-size:12px;margin-top:20px;">
                 Bitte bestätige diese Erinnerung wenn du sie gesehen hast.
+            </p>
+            <div style="text-align:center;margin:24px 0;">
+                <a href="http://192.168.0.64:8501"
+                   style="background:linear-gradient(135deg,#667eea,#764ba2);
+                          color:white;padding:14px 32px;border-radius:12px;
+                          text-decoration:none;font-weight:700;font-size:15px;
+                          display:inline-block;">
+                    ✓ Erinnerung bestätigen in StudyBot
+                </a>
+            </div>
+            <p style="color:#9AA5BD;font-size:11px;text-align:center;">
+                Klicke den Button um StudyBot zu öffnen und die Erinnerung zu bestätigen.
             </p>
         </div>
         """
