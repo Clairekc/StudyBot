@@ -25,7 +25,7 @@ streamlit run streamlit/app.py
 ---
 
 ## Systemarchitektur
-
+https://gitlab.rlp.net/mnch3146910289/studybot/-/blob/20327653d3120a87a860bf49fa7f212557b73b4c/WhatsApp_Image_2026-06-24_at_00.06.52.jpeg
 
 
 ## Machine Learning Methoden
