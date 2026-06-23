@@ -1,125 +1,5 @@
 [
   {
-    "zeit": "2026-06-23 06:25:52.643963",
-    "typ": "signal",
-    "nachricht": "Signal gesendet: 'jah'"
-  },
-  {
-    "zeit": "2026-06-23 06:28:40.015909",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'saugen' (hoch)"
-  },
-  {
-    "zeit": "2026-06-23 06:28:40.567542",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'saugen' (hoch)"
-  },
-  {
-    "zeit": "2026-06-23 06:28:45.264714",
-    "typ": "warnung",
-    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
-  },
-  {
-    "zeit": "2026-06-23 06:28:45.877022",
-    "typ": "warnung",
-    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
-  },
-  {
-    "zeit": "2026-06-23 06:28:46.583438",
-    "typ": "email",
-    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'saugen'"
-  },
-  {
-    "zeit": "2026-06-23 06:28:46.595530",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
-  },
-  {
-    "zeit": "2026-06-23 06:28:46.830972",
-    "typ": "email",
-    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'saugen'"
-  },
-  {
-    "zeit": "2026-06-23 06:28:46.838778",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'termin' (hoch)"
-  },
-  {
-    "zeit": "2026-06-23 06:28:49.164649",
-    "typ": "warnung",
-    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
-  },
-  {
-    "zeit": "2026-06-23 06:28:49.804842",
-    "typ": "email",
-    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'termin'"
-  },
-  {
-    "zeit": "2026-06-23 06:28:49.812847",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
-  },
-  {
-    "zeit": "2026-06-23 06:28:49.925638",
-    "typ": "warnung",
-    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
-  },
-  {
-    "zeit": "2026-06-23 06:28:50.860526",
-    "typ": "email",
-    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'termin'"
-  },
-  {
-    "zeit": "2026-06-23 06:28:50.868334",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
-  },
-  {
-    "zeit": "2026-06-23 06:28:51.688783",
-    "typ": "warnung",
-    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
-  },
-  {
-    "zeit": "2026-06-23 06:28:52.012381",
-    "typ": "warnung",
-    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
-  },
-  {
-    "zeit": "2026-06-23 06:28:52.354632",
-    "typ": "email",
-    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'spazieren gehen'"
-  },
-  {
-    "zeit": "2026-06-23 06:28:52.361701",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
-  },
-  {
-    "zeit": "2026-06-23 06:28:52.642140",
-    "typ": "email",
-    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'spazieren gehen'"
-  },
-  {
-    "zeit": "2026-06-23 06:28:52.649707",
-    "typ": "info",
-    "nachricht": "Erinnerung faellig: 'spazieren gehen' (hoch)"
-  },
-  {
-    "zeit": "2026-06-23 06:28:54.203178",
-    "typ": "warnung",
-    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
-  },
-  {
-    "zeit": "2026-06-23 06:28:54.282311",
-    "typ": "warnung",
-    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
-  },
-  {
-    "zeit": "2026-06-23 06:28:54.944423",
-    "typ": "email",
-    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'spazieren gehen'"
-  },
-  {
     "zeit": "2026-06-23 06:28:54.949961",
     "typ": "info",
     "nachricht": "Erinnerung faellig: 'prog2' (kritisch)"
@@ -498,5 +378,125 @@
     "zeit": "2026-06-23 12:43:59.378117",
     "typ": "signal",
     "nachricht": "Signal gesendet: 'boden putzen'"
+  },
+  {
+    "zeit": "2026-06-23 13:47:27.677533",
+    "typ": "system",
+    "nachricht": "Scheduler gestartet"
+  },
+  {
+    "zeit": "2026-06-23 13:47:32.027828",
+    "typ": "system",
+    "nachricht": "Scheduler gestartet"
+  },
+  {
+    "zeit": "2026-06-23 13:50:37.664963",
+    "typ": "planung",
+    "nachricht": "Geplant: 'sport' (hoch) -> 2 Erinnerungen"
+  },
+  {
+    "zeit": "2026-06-23 13:56:47.552468",
+    "typ": "system",
+    "nachricht": "Scheduler gestartet"
+  },
+  {
+    "zeit": "2026-06-23 13:56:49.866925",
+    "typ": "system",
+    "nachricht": "Scheduler gestartet"
+  },
+  {
+    "zeit": "2026-06-23 14:02:30.140662",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'sport' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 14:02:31.551144",
+    "typ": "anwesenheit",
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (43.2%)"
+  },
+  {
+    "zeit": "2026-06-23 14:02:32.285749",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'sport' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 14:02:33.505462",
+    "typ": "anwesenheit",
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (41.4%)"
+  },
+  {
+    "zeit": "2026-06-23 14:02:33.577742",
+    "typ": "signal",
+    "nachricht": "Arduino-Signal gesendet: 'sport' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 14:02:33.577742",
+    "typ": "audio",
+    "nachricht": "Audio-Alarm gespeichert: 'sport'"
+  },
+  {
+    "zeit": "2026-06-23 14:02:33.582774",
+    "typ": "signal",
+    "nachricht": "Signal gesendet: 'sport'"
+  },
+  {
+    "zeit": "2026-06-23 14:02:35.537079",
+    "typ": "signal",
+    "nachricht": "Arduino-Signal gesendet: 'sport' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 14:02:35.551037",
+    "typ": "audio",
+    "nachricht": "Audio-Alarm gespeichert: 'sport'"
+  },
+  {
+    "zeit": "2026-06-23 14:02:35.560891",
+    "typ": "signal",
+    "nachricht": "Signal gesendet: 'sport'"
+  },
+  {
+    "zeit": "2026-06-23 14:04:33.595333",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'sport' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 14:04:34.876390",
+    "typ": "warnung",
+    "nachricht": "Falsche Person oder niemand erkannt — warte auf richtigen Nutzer"
+  },
+  {
+    "zeit": "2026-06-23 14:04:35.586438",
+    "typ": "info",
+    "nachricht": "Erinnerung faellig: 'sport' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 14:04:35.774352",
+    "typ": "email",
+    "nachricht": "Email-Alarm gesendet an mendelkandjieu@gmail.com: 'sport'"
+  },
+  {
+    "zeit": "2026-06-23 14:04:36.668363",
+    "typ": "anwesenheit",
+    "nachricht": "Anwesenheit bestaetigt: claire_kandjieu (27.2%)"
+  },
+  {
+    "zeit": "2026-06-23 14:04:38.679258",
+    "typ": "signal",
+    "nachricht": "Arduino-Signal gesendet: 'sport' (hoch)"
+  },
+  {
+    "zeit": "2026-06-23 14:04:38.685667",
+    "typ": "audio",
+    "nachricht": "Audio-Alarm gespeichert: 'sport'"
+  },
+  {
+    "zeit": "2026-06-23 14:04:38.688598",
+    "typ": "signal",
+    "nachricht": "Signal gesendet: 'sport'"
+  },
+  {
+    "zeit": "2026-06-23 14:29:24.632707",
+    "typ": "system",
+    "nachricht": "Scheduler gestartet"
   }
 ]

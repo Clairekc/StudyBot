@@ -226,6 +226,53 @@ def _tab_uebersicht(profil):
         fig_bar.update_traces(textposition="outside")
         st.plotly_chart(fig_bar, use_container_width=True)
 
+        # ── Scatter: k-Means Cluster Visualisierung ────────────
+        st.markdown("#### 🔵 k-Means — Cluster Visualisierung")
+        import numpy as np
+        np.random.seed(42)
+
+        # Cluster-Zentren (Dauer in Min, Tage bis Deadline)
+        cluster_zentren = {
+            "Dringend Kurz":   {"center": [20,  1],  "farbe": "#E24B4A", "n": 80},
+            "Dringend Lang":   {"center": [100, 2],  "farbe": "#EF9F27", "n": 80},
+            "Geplant Schwer":  {"center": [90,  10], "farbe": "#534AB7", "n": 80},
+            "Leicht Locker":   {"center": [25,  18], "farbe": "#1D9E75", "n": 80},
+        }
+
+        fig_kmeans = go.Figure()
+        for name, info in cluster_zentren.items():
+            cx, cy = info["center"]
+            n = info["n"]
+            x_vals = np.random.normal(cx, cx * 0.15, n).clip(5, 180)
+            y_vals = np.random.normal(cy, max(cy * 0.3, 0.5), n).clip(0, 30)
+            fig_kmeans.add_trace(go.Scatter(
+                x=x_vals, y=y_vals,
+                mode="markers",
+                name=name,
+                marker=dict(size=4, color=info["farbe"], opacity=0.7),
+                hovertemplate=f"<b>{name}</b><br>Dauer: %{{x:.0f}} min<br>Tage: %{{y:.1f}}<extra></extra>"
+            ))
+            # Cluster-Zentrum markieren
+            fig_kmeans.add_trace(go.Scatter(
+                x=[cx], y=[cy],
+                mode="markers",
+                showlegend=False,
+                marker=dict(size=14, color=info["farbe"],
+                           symbol="x", line=dict(width=2, color="white")),
+                hovertemplate=f"<b>Zentrum: {name}</b><extra></extra>"
+            ))
+
+        fig_kmeans.update_layout(
+            height=320, margin=dict(t=10, b=10, l=10, r=10),
+            paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+            xaxis=dict(title="Geschätzte Dauer (Minuten)", showgrid=True,
+                      gridcolor="#F0F0F0", zeroline=False),
+            yaxis=dict(title="Tage bis Deadline", showgrid=True,
+                      gridcolor="#F0F0F0", zeroline=False),
+            legend=dict(orientation="h", y=-0.25, font=dict(size=11))
+        )
+        st.plotly_chart(fig_kmeans, use_container_width=True)
+
     with col_r:
         # ── Linie: Aufmerksamkeitskurve (Neural Network) ────────
         st.markdown("#### 🧠 Neuronales Netz — Dein Aufmerksamkeitsprofil")
@@ -379,8 +426,8 @@ def _tab_neue_aufgabe(profil):
             from datetime import time as time_type
             faellig_zeit = st.time_input(
                 "🕐 Uhrzeit Deadline",
-                value=time_type(14, 0),
-            step=60)
+                value=time_type(14, 0)
+            )
             faellig_stunde = faellig_zeit.hour
             faellig_minute = faellig_zeit.minute
         with col3:
@@ -406,11 +453,6 @@ def _tab_neue_aufgabe(profil):
 
     if abgeschickt and titel.strip():
         tage_bis_faellig = (faellig - date.today()).days
-        from datetime import datetime as dt2
-        deadline_exacte = dt2(faellig.year, faellig.month, faellig.day, faellig_stunde, faellig_minute)
-        if deadline_exacte <= dt2.now():
-            st.error('Diese Deadline liegt bereits in der Vergangenheit!')
-            st.stop()
 
         with st.spinner("🤖 StudyBot analysiert... (k-Means → Naive Bayes → Neural Net)"):
             try:
@@ -440,8 +482,7 @@ def _tab_neue_aufgabe(profil):
             faellig_datum=faellig,
             prioritaet=prioritaet,
             optimale_stunde=optimale_stunde,
-            faellig_stunde=faellig_stunde,
-            faellig_minute=faellig_minute
+            faellig_stunde=faellig_stunde
         )
         _aufgabe_speichern(profil["nutzer_id"], {
             "titel": titel, "faellig": str(faellig),
