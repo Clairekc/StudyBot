@@ -26,48 +26,7 @@ streamlit run streamlit/app.py
 
 ## Systemarchitektur
 
-```
-BENUTZER
-   |
-   v
-EINGABE DER AUFGABEN (Streamlit Web-Interface)
-   |
-   v
-DATENBANK DER AUFGABEN (JSON / lokal)
-   |
-   +------------------+------------------+
-   |                  |                  |
-   v                  v                  v
-1. K-MEANS        2. NAIVE BAYES    3. NEURONALES NETZ
-Gruppierung       Prioritäts-       Dringlichkeitswert
-ähnlicher         klassifikation    berechnen
-Aufgaben          Berechnung der    Perzeptron +
-Clusterbildung    Wahrscheinlich-   Sigmoid Funktion
-                  keiten
-   |                  |                  |
-   +------------------+------------------+
-                      |
-                      v
-            4. ENTSCHEIDUNGSSYSTEM
-            Kombination der Ergebnisse
-            Bestimmung der Erinnerungszeit
-                      |
-          +-----------+-----------+
-          |                       |
-          v                       v
-       AUSGABE                 ARDUINO (optional)
-  Priorisierte Liste        LED / Buzzer / Button
-  Erinnerung / Alarm        Physische Signale
-  Empfehlungen              Licht / Ton Benachrichtigung
-                                  |
-                                  v
-                             3D-DRUCK (optional)
-                            Gehäuse des Geräts
-```
 
-
-
----
 
 ## Machine Learning Methoden
 
