@@ -51,21 +51,30 @@ void loop() {
   }
 }
 
-void verarbeite_befehl(String befehl) {
-  if (befehl.startsWith("LED:")) {
-    String farbe = befehl.substring(4);
-    led_einschalten(farbe);
-  }
-  else if (befehl.startsWith("BUZZ:")) {
-    String intensitaet = befehl.substring(5);
+void alarm_loop(String intensitaet) {
+  unsigned long start = millis();
+  // Timeout 2 minutes
+  while (millis() - start < 120000) {
+    // Bip
     buzzer_pattern(intensitaet);
+    
+    // Vérifier bouton pendant la pause
+    unsigned long pause_start = millis();
+    while (millis() - pause_start < 800) {
+      if (digitalRead(BUTTON) == LOW) {
+        delay(50);  // debounce
+        if (digitalRead(BUTTON) == LOW) {
+          while (digitalRead(BUTTON) == LOW) { delay(10); }
+          Serial.println("BUTTON_PRESSED");
+          alle_aus();
+          return;
+        }
+      }
+      delay(10);
+    }
   }
-  else if (befehl == "WAIT_BUTTON") {
-    warte_auf_knopfdruck();
-  }
-  else if (befehl == "STOP") {
-    alle_aus();
-  }
+  Serial.println("BUTTON_TIMEOUT");
+  alle_aus();
 }
 
 void led_einschalten(String farbe) {

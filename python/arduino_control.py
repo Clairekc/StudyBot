@@ -150,14 +150,49 @@ def ereignis_protokollieren(aufgabe_titel, prioritaet, bestaetigt, dauer_sek):
 
 
 def vollstaendiger_erinnerungs_zyklus(verbindung, aufgabe_titel, prioritaet):
-    """
-    Führt den kompletten Ablauf aus: Signal senden → auf Bestätigung
-    warten → Signal stoppen → Ereignis protokollieren.
-    """
     start = time.time()
-    prioritaet_signal_senden(verbindung, prioritaet, aufgabe_titel)
-    bestaetigt = auf_bestaetigung_warten(verbindung)
+    
+    konfiguration = {
+        "kritisch": {"farbe": "rot",   "buzzer": "brutal"},
+        "hoch":     {"farbe": "gelb",  "buzzer": "mittel"},
+        "mittel":   {"farbe": "gruen", "buzzer": "leicht"},
+        "niedrig":  {"farbe": "blau",  "buzzer": "aus"},
+    }
+    config = konfiguration.get(prioritaet, konfiguration["mittel"])
+
+    # LED allumée
+    _senden(verbindung, f"LED:{config['farbe']}")
+    
+    # Une seule commande qui bipe EN BOUCLE jusqu'au bouton
+    if config["buzzer"] != "aus":
+        _senden(verbindung, f"ALARM:{config['buzzer']}")
+    else:
+        _senden(verbindung, "WAIT_BUTTON")
+
+    # Attendre la réponse Arduino
+    bestaetigt = _warten_auf_antwort(verbindung)
     signal_stoppen(verbindung)
+    
     dauer = round(time.time() - start, 1)
     ereignis_protokollieren(aufgabe_titel, prioritaet, bestaetigt, dauer)
     return bestaetigt
+
+
+def _warten_auf_antwort(verbindung, max_wartezeit_sek=120):
+    if verbindung is None:
+        print("[Arduino DEMO] Simuliere Knopfdruck nach 2 Sekunden...")
+        time.sleep(2)
+        return True
+
+    start = time.time()
+    while time.time() - start < max_wartezeit_sek:
+        if verbindung.in_waiting > 0:
+            antwort = verbindung.readline().decode("utf-8").strip()
+            if antwort == "BUTTON_PRESSED":
+                print("[Arduino] ✓ Bestätigung erhalten.")
+                return True
+            elif antwort == "BUTTON_TIMEOUT":
+                print("[Arduino] ✗ Timeout.")
+                return False
+        time.sleep(0.1)
+    return False
