@@ -1,16 +1,39 @@
 # 🤖 StudyBot
 
-StudyBot ist ein intelligenter Lern- und Aufgabenassistent für Schüler und Studierende, der Machine Learning nutzt, um personalisierte Aufgabenverwaltung und smarte Erinnerungen zu bieten.
+StudyBot ist ein intelligenter Lern- und Aufgabenassistent für Studierende, der Machine Learning nutzt, um Aufgaben zu verwalten und automatisch zu erinnern.
 
 ---
 
-## Projektübersicht
+## Zwei Varianten
 
-StudyBot kombiniert drei ML-Methoden (k-Means, Naive Bayes, Neural Network) mit Gesichtserkennung, automatischen Erinnerungen und einer benutzerfreundlichen Web-Oberfläche.
+StudyBot kann auf zwei Arten genutzt werden:
+
+### Variante 1 — Lokal (vollständig)
+
+Die App läuft auf deinem PC. Alle Funktionen sind verfügbar:
+
+- Gesichtserkennung mit Webcam
+- Echte ML-Analyse mit R (k-Means, Naive Bayes, Neural Network)
+- Automatische Erinnerungen im Hintergrund
+- Arduino-Signal (LED + Buzzer) bei Anwesenheit
+- E-Mail-Alarm bei Abwesenheit
+- Sprachausgabe (Edge TTS)
+
+**Starten:** Doppelklick auf `dist/StudyBot_Starten.exe`
+
+### Variante 2 — Cloud (Demo)
+
+Die App läuft online — kein Download nötig. Nur zur Vorschau der Benutzeroberfläche geeignet.
+
+- Anmeldung per Name + Passwort (keine Webcam)
+- ML-Analyse funktioniert (regelbasiert, ohne R)
+- Keine Erinnerungen, kein Arduino, keine E-Mails
+
+**Demo-Link:** https://clairekc-studybot-streamlit-app-py-ybpofb.streamlit.app
 
 ---
 
-## Starten
+## Lokal starten
 
 **Ohne Python-Kenntnisse:**
 1. Doppelklick auf `dist/StudyBot_Starten.exe`
@@ -24,66 +47,57 @@ streamlit run streamlit/app.py
 
 ---
 
-## Systemarchitektur
-https://gitlab.rlp.net/mnch3146910289/studybot/-/blob/20327653d3120a87a860bf49fa7f212557b73b4c/WhatsApp_Image_2026-06-24_at_00.06.52.jpeg
+## Machine Learning
 
-
-## Machine Learning Methoden
-
-| Methode | Zweck | Ergebnis |
+| Methode | Aufgabe | Ergebnis |
 |---|---|---|
-| **k-Means** | Aufgaben-Clustering | 4 Cluster (Dringend Kurz, Dringend Lang, Geplant Schwer, Leicht Locker) |
-| **Naive Bayes** | Priorität-Klassifikation | kritisch / hoch / mittel / niedrig (83.3% Genauigkeit) |
-| **Neural Network** | Optimale Lernzeit | R² = 0.954 |
+| **k-Means** | Aufgaben gruppieren | 4 Cluster (Dringend Kurz, Dringend Lang, Geplant Schwer, Leicht Locker) |
+| **Naive Bayes** | Priorität berechnen | kritisch / hoch / mittel / niedrig (83.3% Genauigkeit) |
+| **Neural Network** | Beste Lernzeit finden | R² = 0.954 |
 
 ---
 
 ## Datenspeicherung
 
-Alle Daten werden **lokal** als JSON-Dateien gespeichert — keine Cloud, keine externe Datenbank:
+Alle Daten werden lokal als JSON-Dateien gespeichert — keine externe Datenbank:
 
-- `daten/profile/` → Nutzerprofile (Name, E-Mail, Passwort-Hash)
-- `daten/tasks/` → Aufgaben + ML-Ergebnisse + Erinnerungen
-- `daten/faces/` → LBPH-Gesichtsmodelle pro Nutzer
-- `daten/scheduler_log.json` → Protokoll aller Erinnerungen
+- `daten/profile/` → Nutzerprofile
+- `daten/tasks/` → Aufgaben und Erinnerungen
+- `daten/faces/` → Gesichtsmodelle (LBPH)
+- `daten/scheduler_log.json` → Protokoll
 
 ---
 
-## Hardware (Optional)
+## Hardware (optional)
 
 **Arduino ELEGOO UNO R3:**
-- Pin 9 → LED Rot
-- Pin 10 → LED Gelb
-- Pin 11 → LED Grün
+- Pin 9 → LED Rot (kritisch)
+- Pin 10 → LED Gelb (hoch)
+- Pin 11 → LED Grün (mittel)
 - Pin 8 → Buzzer
-- Pin 2 → Button
+- Pin 2 → Bestätigungs-Button
 
 ---
 
-## Externe Tools & Links
+## Externe Tools
 
-| Tool | Beschreibung | Link |
-|---|---|---|
-| **Python** | Programmiersprache (v3.11) | https://www.python.org |
-| **R** | Statistik & ML-Sprache | https://www.r-project.org |
-| **Streamlit** | Web-Framework für Python | https://streamlit.io |
-| **GitLab RLP** | Versionskontrolle (Quellcode) | https://gitlab.rlp.net/mnch3146910289/studybot |
-| **Tinkercad** | Arduino-Schaltung Simulation | https://www.tinkercad.com/things/ankOzd2hPTK/editel |
-| **OnShape** | 3D-CAD Design (Gehäuse) | https://www.onshape.com |
-| **PTC Creo** | 3D-Modellierung professionell | https://www.ptc.com/creo |
-| **Arduino** | Mikrocontroller Plattform | https://www.arduino.cc |
-| **Edge TTS** | Text-to-Speech (KatjaNeural) | https://github.com/rany2/edge-tts |
-| **OpenCV** | Gesichtserkennung (LBPH) | https://opencv.org |
-
----
-
-## Studentin:
-
-- **Mendeleive Claire Chiabou Kandjieu** — mnch@hochschule-trier.de
-- Hochschule Trier 
+| Tool | Link |
+|---|---|
+| Python | https://www.python.org |
+| R | https://www.r-project.org |
+| Streamlit | https://streamlit.io |
+| GitLab RLP (Quellcode) | https://gitlab.rlp.net/mnch3146910289/studybot |
+| GitHub (Cloud-Demo) | https://github.com/Clairekc/StudyBot |
+| Tinkercad (Arduino-Simulation) | https://www.tinkercad.com/things/ankOzd2hPTK/editel |
+| OnShape (3D-Gehäuse) | https://www.onshape.com |
+| PTC Creo (3D-Modellierung) | https://www.ptc.com/creo |
+| Arduino | https://www.arduino.cc |
+| OpenCV (Gesichtserkennung) | https://opencv.org |
+| Edge TTS (Sprachausgabe) | https://github.com/rany2/edge-tts |
 
 ---
 
-## Im Rahmen des Kurses:
+## Studentin
 
-Machine Learning von Prof. Dr. Martin Vogt
+**Mendeleive Claire Chiabou Kandjieu** — mnch@hochschule-trier.de  
+Hochschule Trier — Machine Learning von Prof. Dr. Martin Vogt
